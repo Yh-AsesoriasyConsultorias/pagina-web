@@ -3,33 +3,36 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
+  line-height: 1.6;
   background-color: #ffffff;
   color: #333;
 }
 
-/* Encabezado */
+/* Encabezado y menú */
 header {
   background: #2d6a4f;
   color: white;
-  padding: 20px;
+  padding: 15px 20px;
   text-align: center;
+  position: sticky; /* Menú fijo */
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 header ul {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
 header li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 12px;
 }
 
 header a {
@@ -43,19 +46,44 @@ header a:hover {
   color: #ffd166;
 }
 
-/* Secciones */
+/* Secciones generales */
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
 section h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 15px;
   color: #1b4332;
 }
 
-/* Servicios en cuadrícula */
+section p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* Valores corporativos */
+#valores ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#valores li {
+  margin: 8px 0;
+  padding-left: 15px;
+  border-left: 4px solid #2d6a4f;
+  background: #f9f9f9;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* Servicios */
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -72,4 +100,5 @@ section h2 {
 }
 
 .servicio:hover {
-  transform: translateY(-
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0,0
