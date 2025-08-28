@@ -1,20 +1,30 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  background-color: #ffffff;
+  color: #333;
 }
 
+/* Encabezado */
 header {
   background: #2d6a4f;
   color: white;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
 }
 
 header ul {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
 
 header li {
@@ -25,13 +35,27 @@ header li {
 header a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
+header a:hover {
+  color: #ffd166;
+}
+
+/* Secciones */
 section {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
 }
 
+section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1b4332;
+}
+
+/* Servicios en cuadrícula */
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -44,17 +68,8 @@ section {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.servicio img.icono {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 10px;
-}
-
-footer {
-  background: #1b4332;
-  color: white;
-  text-align: center;
-  padding: 15px;
-}
+.servicio:hover {
+  transform: translateY(-
